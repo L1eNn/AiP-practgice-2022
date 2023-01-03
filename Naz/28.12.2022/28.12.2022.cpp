@@ -9,7 +9,7 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 
-	//Cycle();
+	Cycle();
 
 	//complex<double> z0 = 5. / 1i;
 	//cout << z0;

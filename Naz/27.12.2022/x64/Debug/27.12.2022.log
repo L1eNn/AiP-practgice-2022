@@ -1,3 +1,4 @@
-﻿  27.12.2022.cpp
+﻿E:\Visual Studio\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (27.12.2022.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  27.12.2022.cpp
 E:\GitHub\AiP-practice-2022\Naz\27.12.2022\27.12.2022.cpp(39,9): warning C4244: =: преобразование "double" в "float", возможна потеря данных
-  27.12.2022.vcxproj -> E:\GitHub\AiP-practice-2022\Naz\x64\Debug\27.12.2022.exe
+  27.12.2022.vcxproj -> E:\GitHub\AiP-practice-2022\Naz\x64\Debug\26.12.2022.exe

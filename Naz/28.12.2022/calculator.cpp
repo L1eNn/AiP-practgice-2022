@@ -42,16 +42,23 @@ void Cycle() {
 			cout << "___________________________" << endl << endl;
 		}
 		else {
-			char numbersAmount;			
+			char numbersAmount;
 
 			cout << "1) ќперации над одним комплексным числом \n 2) ќперации с двум€ комплексными числами ";
 			cin >> numbersAmount;
 
 			if (numbersAmount == 1) {
+				int operation;
 				double realNum,  imagNum;
+
+				cout << "—писок операций: \n----------------------\n1) + \n2) - \n3) *\n4) / \n";
+				cout << "-----------------------" << endl;
 
 				cout << "¬ведите вещественную часть комплексного числа: ";
 				cin >> realNum;
+
+				cout << "¬ведите операцию: ";
+				cin >> operation;
 
 				cout << "¬ведите мнимую часть комплексного числа: ";
 				cin >> imagNum;
