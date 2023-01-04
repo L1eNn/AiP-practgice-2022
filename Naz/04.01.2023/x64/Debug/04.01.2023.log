@@ -1,0 +1,3 @@
+﻿  04.01.2023.cpp
+E:\GitHub\AiP-practice-2022\Naz\04.01.2023\04.01.2023.cpp(37,11): warning C4858: Отбрасывание возвращаемого значения: The 'remove' and 'remove_if' algorithms return the iterator past the last element that should be kept. You need to call container.erase(result, container.end()) afterwards. In C++20, 'std::erase' and 'std::erase_if' are simpler replacements for these two steps..
+  04.01.2023.vcxproj -> E:\GitHub\AiP-practice-2022\Naz\x64\Debug\04.01.2023.exe
