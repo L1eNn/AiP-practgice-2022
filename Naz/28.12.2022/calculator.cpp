@@ -42,9 +42,10 @@ void Cycle() {
 			cout << "___________________________" << endl << endl;
 		}
 		else {
-			char numbersAmount;
+			int numbersAmount;
 
-			cout << "1) Операции над одним комплексным числом \n 2) Операции с двумя комплексными числами ";
+			cout << "1) Операции над одним комплексным числом \n2) Операции с двумя комплексными числами \n";
+			cout << "Выберите: ";
 			cin >> numbersAmount;
 
 			if (numbersAmount == 1) {
@@ -62,6 +63,13 @@ void Cycle() {
 
 				cout << "Введите мнимую часть комплексного числа: ";
 				cin >> imagNum;
+
+				if (operation == 0) {
+					break;
+				}
+				else {
+					complexResult = SubComplexOperations(operation, realNum, imagNum);
+				}
 			}
 			else {
 				int firstComplexOperation, secondComplexOperation;
@@ -98,10 +106,11 @@ void Cycle() {
 				else {
 					complexResult = ComplexOperations(operation, firstComplexOperation, secondComplexOperation, firstReal, firstImag, secondReal, secondImag);
 				}
-
-				cout << "Результат вычислений: " << complexResult << endl;
-				cout << "___________________________" << endl << endl;
 			}
+
+			cout << "Результат вычислений: " << complexResult << endl;
+			cout << "___________________________" << endl << endl;
+
 		}
 	}
 }

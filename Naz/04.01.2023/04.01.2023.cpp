@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void displayArray(vector<int> v) {
+void displayArray(array<int, 12> v) {
     for (int num : v) {
         cout << num << ' ';
     }
@@ -16,7 +16,7 @@ int main()
 {
     setlocale(LC_ALL, "ru");
 
-    vector<int> numbers = { 5, 38, 7, 23, -8, 35, 0, -16, 3, 70, -9, 7 };
+    array<int, 12> numbers = { 5, 38, 7, 23, -8, 35, 0, -16, 3, 70, -9, 7 };
 
     cout << "Изначальный вектор: " << endl;
     displayArray(numbers);
@@ -26,8 +26,8 @@ int main()
     cout << "Отсортированный вектор: " << endl;
     displayArray(numbers);
 
-    vector<int>::iterator maxElement = max_element(numbers.begin(), numbers.end());
-    vector<int>::iterator minElemnt = min_element(numbers.begin(), numbers.end());
+    array<int, 12>::iterator maxElement = max_element(numbers.begin(), numbers.end());
+    array<int, 12>::iterator minElemnt = min_element(numbers.begin(), numbers.end());
 
     swap(*minElemnt, *maxElement);
 
@@ -35,7 +35,6 @@ int main()
     displayArray(numbers);
 
     remove(numbers.begin(), numbers.end(), 70);
-    numbers.resize(11);
 
     cout << "Вектор с удаленным максимальным элементом: " << endl;
     displayArray(numbers);
