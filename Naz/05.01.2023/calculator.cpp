@@ -13,15 +13,27 @@ void Cycle() {
 	double normalResult;
 	complex<double> complexResult;
 
+	vector<double> doubleHistory = {}; // Вектор результатов вычисления обычных чисел
+	vector<complex<double>> complexHistory = {}; // Вектор результатов вычисления комплексных чисел
+
 	// Бесконечный цикл (калькулятор)
 	while (true) {
-		cout << "1) Обычные числа \n2) Комплексные числа" << endl;
+		cout << "1) Обычные числа \n2) Комплексные числа \n3) Истории вычислений" << endl;
 		cout << "Выберите с чем работать: ";
 		cin >> numeric;
 		cout << endl;
 
+		system("cls"); // Очистка консоли
+
 		if (numeric == 1) {
 			// Операции над обычными числами
+
+			// Вывод результатов вычислений обычных чисел
+			cout << "[ ";
+			for (double num : doubleHistory) {
+				cout << num << ", ";
+			}
+			cout << "]" << endl << endl;
 
 
 			cout << "Список операций: \n----------------------\n1) + \n2) - \n3) *\n4) / \n5) n * pi \n";
@@ -55,11 +67,21 @@ void Cycle() {
 				}
 			}
 
+			doubleHistory.push_back(normalResult); // Добавление числа в исотрию
+
 			cout << "Результат вычислений: " << normalResult << endl;
 			cout << "___________________________" << endl << endl;
 		}
 		else if (numeric == 2) {
 			// Операции над комплексными числами
+
+			// Вывод результатов вычислений комплексных чисел
+			cout << "История вычислений комплексных чисел - [ ";
+			for (complex<double> num : complexHistory) {
+				cout << num << ", ";
+			}
+			cout << "]" << endl << endl;
+
 
 			int numbersAmount;
 
@@ -129,9 +151,36 @@ void Cycle() {
 				}
 			}
 
+			complexHistory.push_back(complexResult); // Добавление числа в исотрию
+
 			cout << "Результат вычислений: " << complexResult << endl;
 			cout << "___________________________" << endl << endl;
 
+		}
+		else {
+			// Работа с результатами вычислений
+			int whichHistory, operation;
+
+			cout << "1) История обычных вычислений \n"
+				<< "2) История комплексных вычислений \n"
+				<< "Выберите с какой историей работать: ";
+			cin >> whichHistory;
+
+			cout << "1) Очистить историю \n"
+				<< "Выберите: ";
+			// TODO: Доделать опции для истории
+			cin >> operation;
+
+			if (operation == 1) {
+				if (whichHistory == 1) {
+					doubleHistory.clear();
+				}
+				else {
+					complexHistory.clear();
+				}
+			}
+
+			system("cls"); // Очистка консоли
 		}
 	}
 }

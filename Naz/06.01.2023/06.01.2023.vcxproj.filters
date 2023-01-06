@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="05.01.2023.cpp">
+    <ClCompile Include="06.01.2023.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="calculator.cpp">
