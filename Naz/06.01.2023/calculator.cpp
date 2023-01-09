@@ -213,7 +213,7 @@ void Cycle() {
 		else if (numeric == 5) {
 			srand(time(0));
 			int randomNum = rand();
-
+			
 			cout << "Ваше случайное число: " << randomNum << endl << endl;
 		}
 	}

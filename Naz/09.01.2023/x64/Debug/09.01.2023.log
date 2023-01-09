@@ -1,0 +1,4 @@
+﻿  09.01.2023.cpp
+E:\GitHub\AiP-practgice-2022\Naz\09.01.2023\09.01.2023.cpp(56,27): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\GitHub\AiP-practgice-2022\Naz\09.01.2023\09.01.2023.cpp(117,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  09.01.2023.vcxproj -> E:\GitHub\AiP-practgice-2022\Naz\x64\Debug\09.01.2023.exe
