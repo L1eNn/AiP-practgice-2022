@@ -1,0 +1,39 @@
+﻿  11.01.2023.cpp
+E:\GitHub\AiP-practgice-2022\Naz\11.01.2023\11.01.2023.cpp(55,27): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\GitHub\AiP-practgice-2022\Naz\11.01.2023\11.01.2023.cpp(120,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+E:\Visual Studio\VC\Tools\MSVC\14.34.31933\include\type_traits(1572,67): warning C4244: аргумент: преобразование "unsigned __int64" в "int", возможна потеря данных
+E:\Visual Studio\VC\Tools\MSVC\14.34.31933\include\future(1468,48): message : выполняется компиляция ссылки на экземпляр шаблон функции "int std::invoke<int(__cdecl *)(int),unsigned __int64,>(_Callable &&,_Ty1 &&) noexcept(false)"
+          with
+          [
+              _Callable=int (__cdecl *)(int),
+              _Ty1=unsigned __int64
+          ]
+E:\Visual Studio\VC\Tools\MSVC\14.34.31933\include\future(1474,94): message : выполняется компиляция ссылки на экземпляр шаблон функции "int std::_Invoke_stored_explicit<int(__cdecl *)(int),unsigned __int64,0,1>(std::tuple<int (__cdecl *)(int),unsigned __int64> &&,std::integer_sequence<size_t,0,1>)"
+E:\Visual Studio\VC\Tools\MSVC\14.34.31933\include\future(1501,1): message : выполняется компиляция ссылки на экземпляр шаблон функции "int std::_Invoke_stored<int(__cdecl *)(int),unsigned __int64>(std::tuple<int (__cdecl *)(int),unsigned __int64> &&)"
+E:\Visual Studio\VC\Tools\MSVC\14.34.31933\include\future(1501,1): message : во время компиляции функции-члена класс шаблон "int std::_Fake_no_copy_callable_adapter<int (__cdecl &)(int),_Ty>::operator ()(void)"
+          with
+          [
+              _Ty=unsigned __int64
+          ]
+E:\Visual Studio\VC\Tools\MSVC\14.34.31933\include\type_traits(1562,5): message : выполняется компиляция ссылки на экземпляр шаблон функции "int std::_Fake_no_copy_callable_adapter<int (__cdecl &)(int),_Ty>::operator ()(void)"
+          with
+          [
+              _Ty=unsigned __int64
+          ]
+E:\Visual Studio\VC\Tools\MSVC\14.34.31933\include\future(1523,58): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "std::_Fake_no_copy_callable_adapter<int (__cdecl &)(int),_Ty>"
+          with
+          [
+              _Ty=unsigned __int64
+          ]
+E:\Visual Studio\VC\Tools\MSVC\14.34.31933\include\future(1536,42): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::future<int> std::async<int(__cdecl &)(int),_Ty>(std::launch,_Fty,_Ty &&)"
+          with
+          [
+              _Ty=unsigned __int64,
+              _Fty=int (__cdecl &)(int)
+          ]
+E:\GitHub\AiP-practgice-2022\Naz\11.01.2023\11.01.2023.cpp(34,76): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::future<int> std::async<int(__cdecl &)(int),unsigned __int64>(_Fty,unsigned __int64 &&)"
+          with
+          [
+              _Fty=int (__cdecl &)(int)
+          ]
+  11.01.2023.vcxproj -> E:\GitHub\AiP-practgice-2022\Naz\x64\Debug\11.01.2023.exe
