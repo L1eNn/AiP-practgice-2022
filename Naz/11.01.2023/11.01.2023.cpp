@@ -121,7 +121,6 @@ int main()
 
 	int amountOfMembers;
 	int amountOfSpins;
-	string waitingVar;
 	char choice;
 
 	cout << "Введите количество участников в лотерее: ";
